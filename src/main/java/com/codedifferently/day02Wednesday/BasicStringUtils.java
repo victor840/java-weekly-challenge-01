@@ -6,7 +6,16 @@ public class BasicStringUtils {
      * @return string with identical content, and the first character capitalized
      */
     public static String camelCase(String str) {
-        return null;
+        // will first convert string to array using Java split method.
+        String[] strArray = str.split(" ");
+        //made a reference upperCase of type String and made it an empty string.
+        String upperCaseValue = "";
+        // for loop designed to make the first letter in the array upper case
+        for(int i = 0; i < strArray.length; i++) {
+          upperCaseValue += Character.toUpperCase(strArray[i].charAt(0))+strArray[i].substring(1) + " ";
+        }
+        //".trim" removed all leading and trailing spaces in string
+        return upperCaseValue.trim();
     }
 
     /**
