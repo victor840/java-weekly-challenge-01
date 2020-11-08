@@ -23,15 +23,24 @@ public class BasicStringUtils {
      * @return string with identical contents, in the reverse order
      */
     public static String reverse(String str) {
-        return null;
-    }
+
+            String reverseWords = "";
+            for(int i = str.length() -1; i >= 0; i--){
+                reverseWords += str.charAt(i);
+            }
+            return reverseWords;
+        }
 
     /**
      * @param str string input from client
      * @return string with identical contents, with each word individually in reverse order
      */
     public static String reverseWords(String str) {
-        return null;
+        String reverseWords = "";
+        for(int i = str.length() -1; i >= 0; i--){
+            reverseWords += str.charAt(i);
+        }
+        return reverseWords;
     }
 
     /**
